@@ -1,0 +1,47 @@
+﻿.product-info {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px;
+}
+
+    .product-info::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .product-info img {
+        float: left;
+        margin-right: 20px;
+        
+    }
+
+
+@media (max-width: 500px) {
+    .product-info {
+        text-align: center;
+    }
+
+        .product-info img {
+            margin: auto;
+            float: none;
+            display: block;
+        }
+}
+
+.btn {
+    border: 1px solid; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 10px 20px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+.default {
+    background-color: #c8c8c8;
+    color: black;
+}
+    /* Gray */
+.default:hover {
+        background: #ddd;
+}
